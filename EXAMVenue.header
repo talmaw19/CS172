@@ -1,0 +1,37 @@
+#pragma once
+#include <iostream>
+#include <string>
+#include <iostream>
+#include <ctime>
+#include "Event.h"
+using namespace std;
+
+class Venue
+{
+private:
+	Event scheduledEvents[12];// number of events that are scheduled 12 is the max
+	
+	int numEvents; // everytime new event iscreated it increments 
+private: // helps seperate methods and variables
+	bool validTime(int time); //checks if its true or false 
+public:
+	void addEvent(int , string ); 
+	Event findEvent(int );
+	Event findEvent(string );
+
+
+
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
